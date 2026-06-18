@@ -1,0 +1,27 @@
+{
+  "name": "playwright-ui-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "playwright": "^1.61.0",
+    "playwright-core": "^1.61.0",
+    "undici-types": "^7.24.6"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.0",
+    "@types/node": "^25.9.3"
+  },
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Heatclif/playwright-ui-demo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Heatclif/playwright-ui-demo/issues"
+  },
+  "homepage": "https://github.com/Heatclif/playwright-ui-demo#readme"
+}
