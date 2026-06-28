@@ -1,24 +1,26 @@
 {
   "name": "playwright-ui-demo",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "dependencies": {
-    "playwright": "^1.61.0",
-    "playwright-core": "^1.61.0",
-    "undici-types": "^7.24.6"
+  "description": "Multi-website Playwright POM demo (SauceDemo + WebDriverUniversity).",
+  "private": true,
+  "scripts": {
+    "test": "playwright test",
+    "test:saucedemo": "playwright test --project=saucedemo-chromium",
+    "test:wdu": "playwright test --project=wdu-chromium",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:report": "playwright show-report",
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@playwright/test": "^1.61.0",
-    "@types/node": "^25.9.3"
+    "@types/node": "^25.9.3",
+    "typescript": "^6.0.3"
   },
-  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Heatclif/playwright-ui-demo.git"
   },
-  "keywords": [],
-  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Heatclif/playwright-ui-demo/issues"
