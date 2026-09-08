@@ -149,3 +149,34 @@ vite.config.ts.timestamp-*
 /playwright/.cache/
 /playwright/.auth/
 /.playwright-mcp/
+
+# ------------------------------------------------------------------
+# playwright-ui-demo (Node/TypeScript) - no local .gitignore of its own
+# ------------------------------------------------------------------
+playwright-ui-demo/node_modules/
+playwright-ui-demo/test-results/
+playwright-ui-demo/playwright-report/
+playwright-ui-demo/blob-report/
+playwright-ui-demo/.playwright-mcp/
+playwright-ui-demo/.env
+playwright-ui-demo/.env.*
+
+# ------------------------------------------------------------------
+# webdriverio-ui-demo (Node/TypeScript) - extends its own .gitignore
+# ------------------------------------------------------------------
+webdriverio-ui-demo/.env
+webdriverio-ui-demo/.env.*
+
+# ------------------------------------------------------------------
+# selenium-java-ui-demo (Maven/Java) - extends its own .gitignore
+# ------------------------------------------------------------------
+selenium-java-ui-demo/*.class
+selenium-java-ui-demo/.mvn/
+selenium-java-ui-demo/dependency-reduced-pom.xml
+selenium-java-ui-demo/allure-results/
+selenium-java-ui-demo/allure-report/
+
+# IDE / OS cruft (repo-wide; playwright-ui-demo has no local rules for these)
+playwright-ui-demo/.idea/
+playwright-ui-demo/*.iml
+.DS_Store

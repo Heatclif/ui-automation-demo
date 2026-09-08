@@ -1,0 +1,5 @@
+target/
+errorShots/
+.idea/
+*.iml
+.vscode/

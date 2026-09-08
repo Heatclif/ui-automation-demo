@@ -1,0 +1,24 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "lib": ["ES2022", "DOM"],
+    "types": ["node", "@wdio/globals/types", "@wdio/mocha-framework", "expect-webdriverio"],
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "paths": {
+      "@helpers/*": ["./src/helpers/*"],
+      "@saucedemo/*": ["./src/websites/saucedemo/*"],
+      "@wdu/*": ["./src/websites/webdriveruniversity/*"]
+    }
+  },
+  "include": ["src/**/*", "test/**/*", "wdio.*.conf.ts"]
+}

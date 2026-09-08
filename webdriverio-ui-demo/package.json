@@ -1,0 +1,26 @@
+{
+  "name": "webdriverio-ui-demo",
+  "version": "1.0.0",
+  "description": "Multi-website WebdriverIO POM demo (SauceDemo + WebDriverUniversity). TypeScript sibling of playwright-ui-demo.",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "npm run test:saucedemo && npm run test:wdu",
+    "test:saucedemo": "wdio run ./wdio.saucedemo.conf.ts",
+    "test:wdu": "wdio run ./wdio.wdu.conf.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "@wdio/cli": "^9.31.7",
+    "@wdio/local-runner": "^9.31.7",
+    "@wdio/mocha-framework": "^9.31.7",
+    "@wdio/spec-reporter": "^9.31.2",
+    "@wdio/types": "^9.31.2",
+    "@wdio/globals": "^9.31.3",
+    "webdriverio": "^9.31.7",
+    "typescript": "^7.0.2",
+    "tsx": "^4.23.13",
+    "@types/node": "^26.5.0"
+  },
+  "license": "ISC"
+}
